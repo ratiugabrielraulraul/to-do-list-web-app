@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-do-list</title>
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="content">
+        <h1>To-do-List</h1>
+
+        <h3>Create new item</h3>
+        <form id="new-item-form">
+            <label for="description-field">Description</label>
+            <input type="text" id="description-field" placeholder="Description">
+            <label for="deadline-picker">Deadline</label>
+            <input type="datetime-local" id="deadline-picker" placeholder="Deadline">
+            <input type="submit"/>
+        </form>
+        <table id="to-do-items-table">
+            <thead>
+            <tr>
+                <th>Description</th>
+                <th>Deadline</th>
+                <th>Done</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Learn HTML</td>
+                <td>30.08.2019</td>
+                    <td><input type="checkbox" class="mark-done-checkbox" title="Completed"/></td>
+                <td><a href="#" class="delete-item fa fa-trash"></a></td>
+            </tr>
+            <tr>
+                <td>Learn CSS</td>
+                <td>30.08.2019</td>
+                <td><input type="checkbox" class="mark-done-checkbox" title="Completed"/></td>
+                <td><a href="#" class="delete-item fa fa-trash"></a></td>
+            </tr>
+            <tr>
+                <td>Learn Javascript</td>
+                <td>30.08.2019</td>
+                <td><input type="checkbox" class="mark-done-checkbox" title="Completed"/></td>
+                <td><a href="#" class="delete-item fa fa-trash"></a></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+<script src="js/to-do-list.js"></script>
+
+</body>
+</html>
